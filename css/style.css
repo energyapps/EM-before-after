@@ -160,10 +160,12 @@
   margin-top: 5px;
 }
 
-.stats h4 {
+.stats p {
   border-bottom: none;
   text-decoration: none;
   text-transform: none;
+  font-size: 12px;
+  margin-bottom: 10px;
   line-height: 120%;
 }
 
