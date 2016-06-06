@@ -111,10 +111,50 @@
   width: 100%;
 }
 
+/*.twentytwenty-overlay {display: none;}*/
+
 .twentytwenty-overlay:hover {
-  /*display: none;*/
-  /*opacity: 1 !important;  */
+  display: none;
+  /*opacity: 0 !important;  */
 }
+
+.twentytwenty-after-label, .twentytwenty-before-label {
+  opacity: 1 !important;
+}
+
+.twentytwenty-before1-label:before, .twentytwenty-after1-label:before {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+.twentytwenty-before1-label:before, .twentytwenty-after1-label:before {
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+    line-height: 38px;
+    padding: 0 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.twentytwenty-before-label1:before {
+    content: "Before";
+    left: 10px;
+}
+
+.twentytwenty-after-label1:before {
+    content: "After";
+    right: 10px;
+}
+
+
+
+
+
+
 
 .stats {
   float: right;
