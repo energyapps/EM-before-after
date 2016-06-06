@@ -12,118 +12,6 @@
   color: #19A9E2;
 }
 
-/********************************
-Legend
-********************************/
-#legend-content {
-  position: relative;
-  width: 50%;
-  height: 60px;
-  background-color: rgb(221,221,221);
-  float: left;
-}
-
-.my-legend .legend-title {
-  text-align: left;
-  font-size: 14px;
-  padding-top: 5px;
-  /*float: right;*/
-  color: #444;
-  font-family:'Avenir LT W02 35 Light';
-  padding-left: 11px;
-}
-
-.my-legend .legend-scale ul {
-  margin: 0;
-  padding: 0;
-  float: left;
-  list-style: none;
-  /*position: relative;*/
-  /*width: 100%;*/
-  display: block;
-  padding-left: 10px;
-  }
-
-
-
-
-.my-legend .legend-scale ul li {
-  display: block;
-  font-family: "Avenir LT W02 35 Light",verdana,sans-serif;   
-  float: left;
-  width: 50px;  
-  text-align: center;
-  /*font-size: 80%;*/
-  list-style: none;
-  color: #444;
-  font-size: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: rgb(242,242,242);
-  border-left:  1px solid #fff;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
-  cursor: pointer;
-  /*transition: background-color 100ms ease-out;*/
-  }
-
-.my-legend .legend-scale ul li:hover {
-  background-color: rgb(184,223,101);
-  /*transition: background-color 100ms ease-out;*/
-}
-
-.my-legend .legend-scale ul li.activea {
-  background-color: #FFAB03;
-  /*transition: background-color 100ms ease-out;*/
-}
-
-.my-legend .legend-scale ul li:last-child {
-  border-right: 1px solid #fff;
-}
-
-.my-legend ul.legend-labels li span {
-  display: block;
-  float: right;
-  height: 100%;
-  width: 100%;
-  /*border-left: 2px solid #fff;*/
-  /*margin-bottom: 5px;*/
-  }
-
-.my-legend .legend-scale ul li img {
-  padding-top: 4px;
-  height: 21px;
-  width: 21px;
-}
-
-.buttonsi {
-  padding: 0 !important;
-}
-
-.buttonsi:hover {
-  background-color: rgb(242,242,242) !important;
-}
-
-.my-legend a {
-  color: #777;
-  }
-
-.my-legend {
-  width: 100%;
-}
-
-#dis1 {
-  background-color: rgb(221,221,221);
-  /*position: absolute;*/
-}
-
- #dis1  h1,  #dis1 h2,  #dis1 h3,  #dis1 h4, #dis1  p {
-  border-bottom: none !important;
-  color: #333;
-/*  padding: 0px !important;
-  margin: 0px !important;*/
-}
-
 #sidebar-right{display:none !important;}.sidebar-second #main-content{width:100% !important;}
 
 
@@ -188,6 +76,68 @@ Legend
   color: #333 !important;
 }
 
+.contentbox {
+  width: 100%;
+  padding: 10px;
+  height: 550px;
+}
+
+.sidebyside {
+  width: 100%;
+  position: relative;
+}
+
+.contentbox h1 {
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.contentbox h3 {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.twentytwenty-wrapper {
+  width: 60%;
+}
+
+.twentytwenty-container {
+  margin-top: 10px;
+  width: 100%;
+  float: left;
+}
+
+.twentytwenty-container img {
+  width: 100%;
+}
+
+.twentytwenty-overlay {
+  display: none;
+}
+
+.stats {
+  float: right;
+  width: 37%;
+  /*padding-left: 10px;*/
+  padding-right: 10px;
+}
+
+.stats h3 {
+  color: #000;
+  border-bottom: 1px #000 solid;
+  margin-bottom: 10px;
+}
+
+.stats h4 {
+  border-bottom: none;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 120%;
+}
+
+.statline {
+  color: rgb(139,202,0);
+}
 
 /*Map stuff*/
 #master_container
@@ -197,7 +147,6 @@ Legend
   font-size: 12px;
   background-color: #ddd;
   margin: 0;
-  padding-bottom:55%;
   width: 100%;
   max-width: 1000px;
   overflow: visible;
@@ -205,23 +154,6 @@ Legend
   clear: both;
 }
 
-/*.axis path,
-.axis line {
-  fill: none;
-  stroke: #555;
-  shape-rendering: crispEdges;
-}
-
-.axis text {
-  fill: #555;
-}
-
-.line {
-  fill: none;
-  stroke: #ef0d0c;
-  stroke-width: 1.5px;
-}
-*/
 #map_container {
   width: 100%;
   height: 100%;
@@ -230,191 +162,11 @@ Legend
 }
 
 
-/* D3 stuff */
-.state {fill: #fff;}
-/*.state.MN { fill: #aad; }
-.state.MO { fill: #daa; }
-.state.MI { fill: #dad; }
-.state.MS { fill: #ada; }*/
-
-.state-boundary {
-  fill: none;
-  stroke: #eee;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  stroke-width: 2px;
-}
-
-.bubbles, .bubbles2, .bubbles3 {
-  fill-opacity: .5;
-  stroke: #333;
-  stroke-width: .5px;
-  /*fill: #cdd;*/
-  fill:#ffb732;
-}
-
-.bubbles :hover, .bubbles2 :hover, .bubbles3 :hover {
-  stroke: #ffb732;
-  stroke-width: 3px;
-  /*fill: #ff5614;*/
-  cursor: pointer;
-}
-
-.posB {
-  fill:#ffb732;
-}
-
-.negB {
-  fill: #ADD8E6;
-}
-
-.legend circle {
-  fill: none;
-  stroke: #fff;
-}
-
-.legend text {
-  fill: #777;
-  font: 10px sans-serif;
-  text-anchor: middle;
-}
-
-#tooltip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  fill: #fff;
-  fill-opacity: 0.8;
-  border-radius: 2px;
-  stroke-width: 1px;
-  stroke: #333;
-}
-
-#slideBox, #slider, .sly1 {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  fill: #fff;
-  fill-opacity: 0.9;
-  /*border-radius: 2px;
-  stroke-width: 1px;
-  stroke: #333;*/
-}
-
-#slideBox {
-
-}
-
-.tip-text {
-  fill: #333;
-  font-size: 16px;
-  font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif; 
-  text-anchor: middle; 
-  letter-spacing: 1px;
-}
-
-.tip-text2 {
-  fill: #333;
-  font-size: 14px;
-  font-family: "Avenir LT W02 35 Light",verdana,sans-serif; 
-  text-anchor: middle; 
-}
-
-.tip-text3 {
-  fill: #333;
-  font-size: 14px;
-  font-family: "Avenir LT W02 35 Light",verdana,sans-serif; 
-  text-anchor: middle; 
-}
-
-.closer {
-cursor: pointer;
-}
-
-.closer :hover {
-  font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif !important;  
-}
-
-.arc {
-  fill-opacity: 0.6;
-}
-
-.arc path {
-  stroke: #fff;
-}
-
-.arc path :hover {
-    cursor: pointer;
-}
-
-.arc :hover {
-  cursor: pointer;
-  fill-opacity: 0.8;
-}
-
-/*selector*/
-
-#selectBox {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  background-color: #ddd;
-}
-
-#totalDiv {
-  background-color: rgb(221,221,221);
-  float: right;
-  width: 50%;
-  height: 75px;
-  text-align: right;
-}
-
-#totalDiv h2 {
-  font-size: 20px;
-  padding-top: 5px;
-  padding-right: 5px;
-  color: #333;
-  line-height: 30px;
-}
-
-#totalDiv h3 {
-  font-size: 30px;
-  padding-top: 5px;
-  padding-right: 5px;
-  color: #333;
-  line-height: 14px;
-  margin: 0px;
-  padding-bottom: 0px !important;
-  border-bottom: none !important;
-  margin-bottom: 0px !important;
-}
-
-#totalDiv h4 {
-  padding-top: 5px;
-  padding-right: 5px;
-  color: #333;
-    padding-bottom: 0px !important;
-  border-bottom: none !important;
-  margin-bottom: 0px !important;
-}
-  
-
-/*Repeater*/
-#repeater, #fastforward, #rewind {
-  cursor:  pointer;
-    stroke: #fff;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  stroke-width: 1px;
-}
 
 /*Responsive*/
 @media (max-width:900px){
  #master_container { 
   padding-bottom:58% !important; 
- }
- #totalDiv, #legend-content {
-  width: 100%;
  }
 }
 @media (max-width:870px){
@@ -441,30 +193,6 @@ cursor: pointer;
   padding-bottom:55% !important; 
  }*/
  
-  #totalDiv h3 { 
-    font-size: 15px;
-    line-height: 100%;
-  }
-
-  #totalDiv h2 { 
-    font-size: 16px;
-    line-height: 100%;
-  }
-
-  #totalDiv h4 { 
-    font-size: 12px;
-    line-height: 4px;
-  }
-
-
- #pre_content h2 {
-  font-size: 20px;
-  padding-top: 5px;
-  padding-left: 5px;
-  line-height: 20px;
- }
- #post_content {width: 90%;} 
-
  #fold img{ 
   display: none;
   }  

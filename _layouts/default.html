@@ -20,7 +20,7 @@
 
 <!-- Begin Merged CSS -->
 
-
+<link rel="stylesheet" href="http://zurb.com/playground/uploads/upload/upload/93/twentytwenty.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- <link rel="stylesheet" type="text/css" href="css/dragdealer.css"> -->
 
@@ -61,22 +61,24 @@
 
 <!-- Javascript references -->
   <!-- Libraries such as jquery, mapbox, highcharts. Can (probably should) be referenced from external setting-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
-  <script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
-  <script type="text/javascript" src="js/jquery.beforeafter-1.4.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+  <script src="http://zurb.com/playground/uploads/upload/upload/91/jquery.event.move.js"></script>
+  <script src="http://zurb.com/playground/uploads/upload/upload/92/jquery.twentytwenty.js"></script>
+
   <script type="text/javascript">
-  $(function(){
-    $('#container').beforeAfter();
-    $('#container2').beforeAfter();
-    $('#container3').beforeAfter();
-  });
+    $(window).load(function() {
+      console.log('th')
+      $("#container").twentytwenty();
+      $('#container2').twentytwenty();
+      $('#container3').twentytwenty();
+    });
   </script>
 
   <!-- Data (JSON, etc) -->
   
 
   <!-- Scripts (get to work) like script.js -->
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- // <script type="text/javascript" src="js/script.js"></script> -->
 
 <!-- /End JS references -->
 

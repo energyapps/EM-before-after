@@ -20,7 +20,7 @@
 
 <!-- Begin Merged CSS -->
 
-
+<link rel="stylesheet" href="http://zurb.com/playground/uploads/upload/upload/93/twentytwenty.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- <link rel="stylesheet" type="text/css" href="css/dragdealer.css"> -->
 
@@ -67,31 +67,71 @@
 
 <div id="dis1">
   <div id="pre_content">
-  	<h2>Title</h2>
+  	<h2>Department of Energy's impressive progress</h2>
     <p>Add sub heading here!</p>      
   </div>
  
   
   <div id="master_container">
 
-  	<svg id="map_container"></svg>
     <div id="fold">
     <!-- <a href="http://energy.gov/articles/new-interactive-map-shows-big-potential-america-s-wind-energy-future"><img src="img/fold.png"></a> -->
     </div>
 
-    <div id="container">
-     <div><img alt="before" src="img/rocky_flats/rocky_95_before.jpg" width="600" height="366" /></div>
-     <div><img alt="after" src="img/rocky_flats/rocky_after.jpg" width="600" height="366" /></div>
+    <div class='contentbox'>
+      <h1>Rocky Flats Environmental Technology Site</h1>
+      <h3>Rocky Flats, CO</h3>
+      <div class="sidebyside">
+        <div id="container" class='twentytwenty-container'>
+         <img src="img/rocky_flats/rocky_95_before.jpg">
+         <img src="img/rocky_flats/rocky_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Nuclear Facility Completions: <span class="statline">6</span></h4>
+          <h4>Radioactive Facility Completions: <span class="statline">54</span></h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">602,188 cubic meters</span></h4>
+          <h4>Industrial Facility Completions: <span class="statline">317</span></h4>
+          <h4>Remediation Complete: <span class="statline">360 Release Sites</span></h4>
+        </div>
+      </div>
     </div>
 
-    <div id="container2">
-     <div><img alt="before" src="img/fernald/fernald_87_before.jpg" width="600" height="366" /></div>
-     <div><img alt="after" src="img/fernald/fernald_after.jpg" width="600" height="366" /></div>
+    <div class='contentbox'>
+      <h1>Fernald Preserve, OH</h1>
+      <h3>A little bit of context information</h3>
+      <div class="sidebyside">
+        <div id="container2" class='twentytwenty-container'>
+         <img src="img/fernald/fernald_87_before.jpg">
+         <img src="img/fernald/fernald_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Radioactive Facility Completions: <span class="statline">29</span></h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">7,085 cubic meters</span></h4>
+          <h4>Industrial Facility Completions: <span class="statline">1</span></h4>
+          <h4>Remediation Complete: <span class="statline">6 Release Sites</span></h4>
+        </div>
+      </div>
     </div>
 
-    <div id="container3">
-     <div><img alt="before" src="img/mound/mound_before.jpg" width="600" height="366" /></div>
-     <div><img alt="after" src="img/mound/mound_after.jpg" width="600" height="366" /></div>
+    <div class='contentbox'>
+      <h1>Mound, OH</h1>
+      <h3>A little bit of context information</h3>
+      <div class="sidebyside">
+        <div id="container3" class='twentytwenty-container'>
+         <img src="img/mound/mound_before.jpg">
+         <img src="img/mound/mound_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Nuclear Facility Completions: <span class="statline">8</span></h4>
+          <h4>Radioactive Facility Completions: <span class="statline">11</span></h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">3,947 cubic meters</span></h4>
+          <h4>Industrial Facility Completions: <span class="statline">116</span></h4>
+          <h4>Remediation Complete: <span class="statline">178 Release Sites</span></h4>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -114,22 +154,24 @@
 
 <!-- Javascript references -->
   <!-- Libraries such as jquery, mapbox, highcharts. Can (probably should) be referenced from external setting-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
-  <script type="text/javascript" src="../js/jquery-ui-1.8.13.custom.min.js"></script>
-  <script type="text/javascript" src="../js/jquery.beforeafter-1.4.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+  <script src="http://zurb.com/playground/uploads/upload/upload/91/jquery.event.move.js"></script>
+  <script src="http://zurb.com/playground/uploads/upload/upload/92/jquery.twentytwenty.js"></script>
+
   <script type="text/javascript">
-  $(function(){
-    $('#container').beforeAfter();
-    $('#container2').beforeAfter();
-    $('#container3').beforeAfter();
-  });
+    $(window).load(function() {
+      console.log('th')
+      $("#container").twentytwenty();
+      $('#container2').twentytwenty();
+      $('#container3').twentytwenty();
+    });
   </script>
 
   <!-- Data (JSON, etc) -->
   
 
   <!-- Scripts (get to work) like script.js -->
-  <script type="text/javascript" src="js/script.js"></script>
+  <!-- // <script type="text/javascript" src="js/script.js"></script> -->
 
 <!-- /End JS references -->
 

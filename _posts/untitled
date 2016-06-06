@@ -1,0 +1,56 @@
+
+    <div class='contentbox'>
+      <h1>Rocky Flats Environmental Technology Site</h1>
+      <h3>Rocky Flats, CO</h3>
+      <div class="sidebyside">
+        <div id="container" class='twentytwenty-container'>
+         <img src="img/rocky_flats/rocky_95_before.jpg">
+         <img src="img/rocky_flats/rocky_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Nuclear Facility Completions: <span class="statline">6</h4>
+          <h4>Radioactive Facility Completions: <span class="statline">54</h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">602,188 cubic meters</h4>
+          <h4>Industrial Facility Completions: <span class="statline">317</h4>
+          <h4>Remediation Complete: <span class="statline">360 Release Sites</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class='contentbox'>
+      <h1>Fernald Preserve, OH</h1>
+      <h3>A little bit of context information</h3>
+      <div class="sidebyside">
+        <div id="container2" class='twentytwenty-container'>
+         <img src="img/fernald/fernald_87_before.jpg">
+         <img src="img/fernald/fernald_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Radioactive Facility Completions: <span class="statline">29</h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">7,085 cubic meters</h4>
+          <h4>Industrial Facility Completions: <span class="statline">1</h4>
+          <h4>Remediation Complete: <span class="statline">6 Release Sites</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class='contentbox'>
+      <h1>Mound, OH</h1>
+      <h3>A little bit of context information</h3>
+      <div class="sidebyside">
+        <div id="container3" class='twentytwenty-container'>
+         <img src="img/mound/mound_before.jpg">
+         <img src="img/mound/mound_after.jpg">
+        </div>
+        <div class="stats">
+          <h3>Progress</h3>
+          <h4>Nuclear Facility Completions: <span class="statline">8</h4>
+          <h4>Radioactive Facility Completions: <span class="statline">11</h4>
+          <h4>LL/LLMW disposed Legacy (Stored) and NGW: <span class="statline">3,947 cubic meters</h4>
+          <h4>Industrial Facility Completions: <span class="statline">116</h4>
+          <h4>Remediation Complete: <span class="statline">178 Release Sites</h4>
+        </div>
+      </div>
+    </div>
