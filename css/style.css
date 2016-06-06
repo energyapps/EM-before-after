@@ -23,7 +23,7 @@
 
 /*Before and after*/
 #pre_content, #post_content {
-  background-color: #ddd;
+  /*background-color: #ddd;*/
 }
 
 #pre_content h2 {
@@ -78,8 +78,6 @@
 
 .contentbox {
   width: 100%;
-  padding: 10px;
-  height: 550px;
 }
 
 .sidebyside {
@@ -102,7 +100,7 @@
 }
 
 .twentytwenty-container {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
   float: left;
 }
@@ -111,11 +109,8 @@
   width: 100%;
 }
 
-/*.twentytwenty-overlay {display: none;}*/
-
 .twentytwenty-overlay:hover {
   display: none;
-  /*opacity: 0 !important;  */
 }
 
 .twentytwenty-after-label, .twentytwenty-before-label {
@@ -150,23 +145,19 @@
     right: 10px;
 }
 
-
-
-
-
-
-
 .stats {
   float: right;
   width: 37%;
   /*padding-left: 10px;*/
   padding-right: 10px;
+  padding-top: 30px;
 }
 
 .stats h3 {
   color: #000;
   border-bottom: 1px #000 solid;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .stats h4 {
@@ -186,13 +177,13 @@
   position: relative;
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
-  background-color: #ddd;
+  /*background-color: #ddd;*/
   margin: 0;
   width: 100%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   overflow: visible;
   /*border: 1px solid black;*/
-  clear: both;
+  /*clear: both;*/
 }
 
 #map_container {
@@ -246,6 +237,15 @@
  #master_container { 
   padding-bottom:70% !important; 
  }
+  .twentytwenty-wrapper {
+    width: 100%;
+  }
+
+  .stats {
+    width: 98%;
+    margin-left: 59px;
+
+  }
 }
 
 @media (max-width:400px){
