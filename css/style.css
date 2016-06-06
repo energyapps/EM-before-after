@@ -111,8 +111,9 @@
   width: 100%;
 }
 
-.twentytwenty-overlay {
-  display: none;
+.twentytwenty-overlay:hover {
+  /*display: none;*/
+  /*opacity: 1 !important;  */
 }
 
 .stats {
